@@ -1,7 +1,7 @@
 public class videoJuego {
     public double precio;
     public String titulo ; 
-    public String genero ; 
+    public String genero ;    
     public videoJuego(String titulo,String
             genero,double precio)
     {
@@ -21,4 +21,9 @@ public class videoJuego {
     {
         return precio +(precio*(igv/100));
     }
+    
+    public double calcularDescuento(double descuento)
+    {
+        return precio - (precio * (descuento / 100));
+    }   
 }
